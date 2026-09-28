@@ -61,7 +61,7 @@ class Naves-Combate inerethed Nave {
     
     method ponerseVisible() = invisibilidad = false
     method ponerseInvisible() = invisibilidad = true
-    estaInvisible() =  invisibilidad 
+    method estaInvisible() =  invisibilidad 
     
     method desplegarMisiles() = 
             misilesDesplegados = misilesDesplegados + 1
