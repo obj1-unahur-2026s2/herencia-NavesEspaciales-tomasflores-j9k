@@ -2,6 +2,7 @@ class Nave {
 
   var velocidad
   var direccion = 0
+  combustible = 0
 
   method acelerar(velocidadASubir) = (velocidad + velocidadASubir).min(100000)
 
@@ -21,8 +22,14 @@ class Nave {
 
   method alejarseUnPocoDelSol() = 
             direccion = (direccion + 1).min(10)
-  
+
+  method cargarCombustible(cantidad) = 
+                  combustible = combustible + cantidad
+
+  method descargarCombustible(cantidad) = 
+                  combustible = combustible - cantidad
 }
+
 
 class Naves-baliza inerethed Nave {
   color baliza = "color"
@@ -32,7 +39,10 @@ class Naves-baliza inerethed Nave {
   method prepararViaje() = 
         cambiarColorDeBaliza(Verde)
         overrited method ponerseParaleloAlSol()
+        overrited method cargarCombustible(30000) 
+        method acelerar(5000)
 }
+
 
 class Naves-Pasajeros inerethed Nave {
 
