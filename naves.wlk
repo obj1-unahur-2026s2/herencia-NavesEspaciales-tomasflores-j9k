@@ -31,7 +31,7 @@ class Nave {
 }
 
 
-class Naves-baliza inerethed Nave {
+class Naves-baliza inherits Nave {
   color baliza = "color"
 
   method cambiarColorDeBaliza(colorNuevo) = baliza = "colorNuevo"
@@ -44,7 +44,7 @@ class Naves-baliza inerethed Nave {
 }
 
 
-class Naves-Pasajeros inerethed Nave {
+class Naves-Pasajeros inherits Nave {
 
   var cantidadDeRaciones =  0
   var cantidadBebidas = 0
@@ -63,7 +63,7 @@ class Naves-Pasajeros inerethed Nave {
           overrited method acercarseUnPocoAlSol()
 }
 
-class Naves-Combate inerethed Nave {
+class Naves-Combate inherits Nave {
 
   var invisibilidad = false
   var misilesDesplegadis = 0
